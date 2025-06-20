@@ -4,11 +4,12 @@ import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
 import { SiGithub, SiTiktok, SiYoutube } from "react-icons/si";
 import logo from '../assets/logo.svg'
+import pic from '../assets/profile-pic.jpeg'
 import { div } from "framer-motion/client";
 
 export const Bento = () => {
   return (
-    <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
+    <div className="min-h-screen bg-pri-40 px-4 py-12 text-neu-10">
       <Logo />
       <motion.div
         initial="initial"
@@ -53,7 +54,7 @@ const Block = ({ className, ...rest }) => {
         damping: 50,
       }}
       className={twMerge(
-        "col-span-4 rounded-lg border border-zinc-700 bg-zinc-800 p-6",
+        "col-span-4 rounded-lg border border-sec-10/25 bg-pri-30 p-6",
         className
       )}
       {...rest}
@@ -63,13 +64,13 @@ const Block = ({ className, ...rest }) => {
 
 const SkillsetBlock = () => (
   <>
-    <Block className=''>
+    <Block className='col-span-12 md:col-span-4'>
 
     </Block>
-    <Block className=''>
+    <Block className='col-span-6 md:col-span-4'>
 
     </Block>
-    <Block className=''>
+    <Block className='col-span-6 md:col-span-4'>
 
     </Block>
 
@@ -77,17 +78,17 @@ const SkillsetBlock = () => (
 )
 
 const HeaderBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-6">
+  <Block className="col-span-12 row-span-2 md:col-span-6 backdrop-blur-2xl border-[0.015rem] border-sec-10/50">
     <main>
       <img
-      src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
+      src={pic}
       alt="avatar"
-      className="mb-4 size-14 rounded-full"
+      className="mb-4 size-20 rounded-lg"
       />
-      <h1 className="mb-12 text-4xl font-medium leading-tight">
+      <h1 className="mb-12 mt-8 text-4xl font-medium leading-tight">
         {'👋'} I'm Vadney Da Silva.{" "}<br />
         <span className="text-zinc-400 text-3xl">
-          I fuse <span className="text-yellow-300">(Web, Logo & 3D Motion) Design</span> to come up with creative solutions.
+          I fuse <span className="text-sec-10">(Web, Logo & 3D Motion) Design</span> to come up with creative solutions.
         </span>
       </h1>
       <a
@@ -126,7 +127,7 @@ const SocialsBlock = () => (
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-white"
+        className="grid h-full place-content-center text-3xl text-neu-10"
       >
         <SiGithub />
       </a>
@@ -154,7 +155,7 @@ const SocialsBlock = () => (
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-white"
+        className="grid h-full place-content-center text-3xl text-neu-10"
       >
 
       </a>
@@ -175,14 +176,6 @@ const AboutBlock = () => (
   </Block>
 );
 
-const LocationBlock = () => (
-  <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3">
-    <FiMapPin className="text-3xl" />
-    <p className="text-center text-lg text-zinc-400">Cyberspace</p>
-  </Block>
-);
-
-
 const Logo = () => {
   return (
 
@@ -199,10 +192,11 @@ const Logo = () => {
 };
 
 const Footer = () => {
+  const year = new Date()
   return (
     <footer className="mt-12">
-      <p className="text-center text-zinc-400">
-
+      <p className="text-center text-neu-10">
+        &copy; {year.getFullYear()} Vadney Da Silva
       </p>
     </footer>
   );

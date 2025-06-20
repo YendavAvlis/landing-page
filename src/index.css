@@ -1,2 +1,17 @@
 @import 'tailwindcss';
 
+@theme{
+    --color-pri-10:#2236B5;
+    --color-pri-20:#131F6A;
+    --color-pri-30:#000107;
+    --color-pri-40:#000104;
+
+
+    --color-sec-10:#FAEBD3;
+    --color-sec-20:#F5D7A8;
+    --color-sec-30:#EFBC6E;
+    --color-sec-40:#C99D59;
+
+    --color-neu-10:#f4f4f4;
+
+}
