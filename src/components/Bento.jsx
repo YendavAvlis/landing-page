@@ -2,10 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { SiGithub, SiTiktok, SiYoutube } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiTiktok, SiYoutube } from "react-icons/si";
 import logo from '../assets/logo.svg'
 import pic from '../assets/profile-pic.jpeg'
 import { div } from "framer-motion/client";
+import { skillsets } from "../constants";
 
 export const Bento = () => {
   return (
@@ -23,9 +24,10 @@ export const Bento = () => {
         <SocialsBlock />
         <AboutBlock />
         <Block className='col-span-12'>
-          <h1 className="text-center text-3xl font-bold">Skillsets</h1>
+          <h1 className="text-4xl font-bold">Skill Set</h1>
         </Block>
         <SkillsetBlock />
+        <ContactBlock />
       </motion.div>
       <Footer />
     </div>
@@ -64,15 +66,21 @@ const Block = ({ className, ...rest }) => {
 
 const SkillsetBlock = () => (
   <>
-    <Block className='col-span-12 md:col-span-4'>
+    {
+      skillsets.map((skill) => (
+        <Block key={skill.id} className={`col-span-12 sm:col-span-6 md:col-span-4 min-h-64 ${skill.title === 'Web Design' && 'row-span-2 md:row-span-1'}`}>
+          <div className={`flex flex-col pt-20 ${skill.title === 'Web Design' && 'sm:pt-'}`}>
+            <h3 className="py-2 text-3xl font-medium">{skill.title}</h3>
+            <p>{skill.description}</p>
+          </div>
+          <div className="flex py-4">
+            <a href="" className="flex items-center text-sec-40 gap-1.5 text-lg">See More <FiArrowRight /></a>
+          </div>
 
-    </Block>
-    <Block className='col-span-6 md:col-span-4'>
+        </Block>
 
-    </Block>
-    <Block className='col-span-6 md:col-span-4'>
-
-    </Block>
+      ))
+    }
 
   </>
 )
@@ -85,9 +93,9 @@ const HeaderBlock = () => (
       alt="avatar"
       className="mb-4 size-20 rounded-lg"
       />
-      <h1 className="mb-12 mt-8 text-4xl font-medium leading-tight">
+      <h1 className="mb-12 mt-8 text-4xl font-medium ">
         {'👋'} I'm Vadney Da Silva.{" "}<br />
-        <span className="text-zinc-400 text-3xl">
+        <span className="text-zinc-400 text-2xl">
           I fuse <span className="text-sec-10">(Web, Logo & 3D Motion) Design</span> to come up with creative solutions.
         </span>
       </h1>
@@ -109,13 +117,13 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-red-500 md:col-span-3"
+      className="col-span-6 bg-blue-500 border-[0.025rem] border-sec-10 md:col-span-3"
     >
       <a
         href="#"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiYoutube />
+        <SiLinkedin />
       </a>
     </Block>
     <Block
@@ -123,7 +131,7 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-green-600 md:col-span-3"
+      className="col-span-6 bg-pri-40 border-[0.025rem] border-sec-10 md:col-span-3"
     >
       <a
         href="#"
@@ -137,7 +145,7 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-zinc-50 md:col-span-3"
+      className="col-span-12 bg-zinc-50 md:col-span-6"
     >
       <a
         href="#"
@@ -146,20 +154,7 @@ const SocialsBlock = () => (
         <SiTiktok />
       </a>
     </Block>
-    <Block
-      whileHover={{
-        rotate: "2.5deg",
-        scale: 1.1,
-      }}
-      className="col-span-6 bg-blue-500 md:col-span-3"
-    >
-      <a
-        href="#"
-        className="grid h-full place-content-center text-3xl text-neu-10"
-      >
 
-      </a>
-    </Block>
   </>
 );
 
@@ -191,11 +186,21 @@ const Logo = () => {
   );
 };
 
+const ContactBlock = () => {
+  return(
+    <Block className='col-span-12'>
+      <div className="min-h-[200px] flex items-center justify-center">
+        <h1 className="text-5xl font-medium">Let&apos;s Talk</h1>
+      </div>
+    </Block>
+  )
+}
+
 const Footer = () => {
   const year = new Date()
   return (
     <footer className="mt-12">
-      <p className="text-center text-neu-10">
+      <p className="text-center text-neu-10 text-sm font-medium leading-relaxed">
         &copy; {year.getFullYear()} Vadney Da Silva
       </p>
     </footer>
