@@ -27,6 +27,7 @@ export const Bento = () => {
           <h1 className="text-4xl font-bold">Skill Set</h1>
         </Block>
         <SkillsetBlock />
+        <Tecnologies />
         <ContactBlock />
       </motion.div>
       <Footer />
@@ -185,6 +186,14 @@ const Logo = () => {
 
   );
 };
+
+const Tecnologies = () => {
+  return(
+    <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
+      <h1>Test</h1>
+    </Block>
+  )
+}
 
 const ContactBlock = () => {
   return(
