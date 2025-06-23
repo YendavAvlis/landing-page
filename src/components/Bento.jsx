@@ -26,7 +26,7 @@ export const Bento = () => {
         <Block className='col-span-12'>
           <h1 className="text-4xl font-bold">Skill Set</h1>
         </Block>
-        <SkillsetBlock />
+        {/* <SkillsetBlock /> */}
         <Tecnologies />
         <ContactBlock />
       </motion.div>
@@ -189,9 +189,26 @@ const Logo = () => {
 
 const Tecnologies = () => {
   return(
-    <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
-      <h1>Test</h1>
-    </Block>
+    <>
+      <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
+        <h1>Test</h1>
+      </Block>
+      <Block className='col-span-2 row-span-2 md:col-span-3 flex items-center justify-center'>
+        <h1>Test</h1>
+      </Block>
+      <Block className='col-span-2 row-span-2 md:col-span-3 flex items-center justify-center'>
+        <h1>Test</h1>
+      </Block>
+      <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
+        <h1>Test</h1>
+      </Block>
+      <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
+        <h1>Test</h1>
+      </Block>
+      <Block className='col-span-2  md:col-span-3 flex items-center justify-center'>
+        <h1>Test</h1>
+      </Block>
+    </>
   )
 }
 
