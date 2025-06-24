@@ -2,11 +2,21 @@ import React from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { SiGithub, SiLinkedin, SiTiktok, SiYoutube } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiReact, SiTiktok, SiYoutube } from "react-icons/si";
 import logo from '../assets/logo.svg'
 import pic from '../assets/profile-pic.jpeg'
 import { div } from "framer-motion/client";
 import { skillsets } from "../constants";
+
+// Icons
+import { FaReact } from "react-icons/fa6";
+import { SiTailwindcss } from "react-icons/si";
+import { FaFigma } from "react-icons/fa6";
+import { FaHtml5 } from "react-icons/fa6";
+import { FaGitAlt } from "react-icons/fa6";
+import { FaCss3 } from "react-icons/fa6";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { SiJavascript } from "react-icons/si";
 
 export const Bento = () => {
   return (
@@ -190,29 +200,36 @@ const Logo = () => {
 const Tecnologies = () => {
   return(
     <>
-      <Block className='col-span-12 md:col-span-3 flex items-center justify-center'>
-        <h1>HTML</h1>
+      <Block className='col-span-12 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
+        <FaHtml5 className="text-3xl"/>
+        <h3 className="text-sm font-semibold tracking-wide">HTML</h3>
       </Block>
-      <Block className='col-span-6 row-span-2 md:col-span-2 flex items-center justify-center border-[0.01rem] border-sec-20'>
-        <h1>Tailwind</h1>
+      <Block className='col-span-6 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
+        <SiTailwindcss className="text-3xl"/>
+        <h3 className="text-sm font-semibold tracking-wide">TailwindCSS</h3>
       </Block>
-      <Block className='col-span-6 md:col-span-2 flex items-center justify-center border-[0.01rem] border-sec-20'>
-        <h1>React</h1>
+      <Block className='col-span-6 md:row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
+        <SiReact className="text-3xl"/>
+        <h3 className="text-sm font-semibold tracking-wide">React</h3>
       </Block>
-      <Block className='col-span-12 row-span-2 md:col-span-2 flex items-center justify-center border-[0.01rem] border-sec-20'>
-        <h1>Figma</h1>
+      <Block className='col-span-12 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
+        <FaFigma className="text-3xl"/>
+        <h3 className="text-sm font-semibold tracking-wide">Figma</h3>
       </Block>
-      <Block className='col-span-6 md:col-span-3 flex items-center justify-center'>
-        <h1>Git</h1>
+      <Block className='col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
+        <FaGitAlt className="text-3xl"/>
+        <h3 className="text-sm font-semibold tracking-wide">Git</h3>
       </Block>
-      <Block className='col-span-6 md:col-span-3 flex items-center justify-center'>
-        <h1>CSS</h1>
+      <Block className='col-span-12 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
+        <FaCss3 className="text-3xl"/>
+        <h3 className="text-sm font-semibold tracking-wide">CSS</h3>
       </Block>
-      <Block className='col-span-6 md:col-span-2 flex items-center justify-center'>
-        <h1>GSAP</h1>
-      </Block>
-      <Block className='col-span-12 md:col-span-3 flex items-center justify-center'>
-        <h1>Javascript</h1>
+      {/* <Block className='col-span-6 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
+        <h3 className="text-sm font-semibold tracking-wide">Framer Motion</h3>
+      </Block> */}
+      <Block className='col-span-12 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
+        <SiJavascript className="text-3xl"/>
+        <h3 className="text-sm font-semibold tracking-wide">Javascript</h3>
       </Block>
     </>
   )
