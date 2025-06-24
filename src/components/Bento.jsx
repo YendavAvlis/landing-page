@@ -34,7 +34,7 @@ export const Bento = () => {
         <SocialsBlock />
         <AboutBlock />
         <Block className='col-span-12'>
-          <h1 className="text-4xl font-bold">Skill Set</h1>
+          <h1 className="text-4xl font-semibold">Technologies</h1>
         </Block>
         {/* <SkillsetBlock /> */}
         <Tecnologies />
@@ -201,34 +201,48 @@ const Tecnologies = () => {
   return(
     <>
       <Block className='col-span-12 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <FaHtml5 className="text-3xl"/>
+        <div className="bg-sec-10  p-2 rounded-md mb-1">
+          <FaHtml5 className="text-2xl text-pri-30"/>
+        </div>
         <h3 className="text-sm font-semibold tracking-wide">HTML</h3>
       </Block>
       <Block className='col-span-6 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
-        <SiTailwindcss className="text-3xl"/>
+        <div className="bg-sec-10  p-2 rounded-md mb-1">
+          <SiTailwindcss className="text-2xl text-pri-30"/>
+        </div>
         <h3 className="text-sm font-semibold tracking-wide">TailwindCSS</h3>
       </Block>
       <Block className='col-span-6 md:row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
-        <SiReact className="text-3xl"/>
+        <div className="bg-sec-10  p-2 rounded-md mb-1">
+          <SiReact className="text-2xl text-pri-30"/>
+        </div>
         <h3 className="text-sm font-semibold tracking-wide">React</h3>
       </Block>
       <Block className='col-span-12 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
-        <FaFigma className="text-3xl"/>
+        <div className="bg-sec-10  p-2 rounded-md mb-1">
+          <FaFigma className="text-2xl text-pri-30"/>
+        </div>
         <h3 className="text-sm font-semibold tracking-wide">Figma</h3>
       </Block>
       <Block className='col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <FaGitAlt className="text-3xl"/>
+        <div className="bg-sec-10  p-2 rounded-md mb-1">
+          <FaGitAlt className="text-2xl text-pri-30"/>
+        </div>
         <h3 className="text-sm font-semibold tracking-wide">Git</h3>
       </Block>
-      <Block className='col-span-12 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <FaCss3 className="text-3xl"/>
+      <Block className='col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
+        <div className="bg-sec-10  p-2 rounded-md mb-1">
+          <FaCss3 className="text-xl text-pri-30"/>
+        </div>
         <h3 className="text-sm font-semibold tracking-wide">CSS</h3>
       </Block>
       {/* <Block className='col-span-6 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
         <h3 className="text-sm font-semibold tracking-wide">Framer Motion</h3>
       </Block> */}
-      <Block className='col-span-12 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <SiJavascript className="text-3xl"/>
+      <Block className='col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
+        <div className="bg-sec-10  p-2 rounded-md mb-1">
+          <SiJavascript className="text-2xl text-pri-30"/>
+        </div>
         <h3 className="text-sm font-semibold tracking-wide">Javascript</h3>
       </Block>
     </>
