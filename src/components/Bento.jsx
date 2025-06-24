@@ -196,7 +196,7 @@ const Tecnologies = () => {
       <Block className='col-span-6 row-span-2 md:col-span-2 flex items-center justify-center'>
         <h1>Tailwind</h1>
       </Block>
-      <Block className='col-span-6 row-span-2 md:col-span-2 flex items-center justify-center'>
+      <Block className='col-span-6 md:col-span-2 flex items-center justify-center'>
         <h1>React</h1>
       </Block>
       <Block className='col-span-12 row-span-2 md:col-span-2 flex items-center justify-center'>
@@ -205,10 +205,13 @@ const Tecnologies = () => {
       <Block className='col-span-4 md:col-span-3 flex items-center justify-center'>
         <h1>Git</h1>
       </Block>
-      <Block className='col-span-4 md:col-span-3 flex items-center justify-center'>
+      <Block className='col-span-6 md:col-span-3 flex items-center justify-center'>
         <h1>CSS</h1>
       </Block>
-      <Block className='col-span-4  md:col-span-3 flex items-center justify-center'>
+      <Block className='col-span-6 md:col-span-2 flex items-center justify-center'>
+        <h1>GSAP</h1>
+      </Block>
+      <Block className='col-span-4 md:col-span-3 flex items-center justify-center'>
         <h1>Javascript</h1>
       </Block>
     </>
