@@ -191,22 +191,25 @@ const Tecnologies = () => {
   return(
     <>
       <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
-        <h1>Test</h1>
+        <h1>HTML</h1>
       </Block>
-      <Block className='col-span-2 row-span-2 md:col-span-3 flex items-center justify-center'>
-        <h1>Test</h1>
+      <Block className='col-span-2 row-span-2 md:col-span-2 flex items-center justify-center'>
+        <h1>Tailwind</h1>
       </Block>
-      <Block className='col-span-2 row-span-2 md:col-span-3 flex items-center justify-center'>
-        <h1>Test</h1>
+      <Block className='col-span-2 row-span-2 md:col-span-2 flex items-center justify-center'>
+        <h1>React</h1>
+      </Block>
+      <Block className='col-span-2 row-span-2 md:col-span-2 flex items-center justify-center'>
+        <h1>Figma</h1>
       </Block>
       <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
-        <h1>Test</h1>
+        <h1>Git</h1>
       </Block>
       <Block className='col-span-2 md:col-span-3 flex items-center justify-center'>
-        <h1>Test</h1>
+        <h1>CSS</h1>
       </Block>
       <Block className='col-span-2  md:col-span-3 flex items-center justify-center'>
-        <h1>Test</h1>
+        <h1>Javascript</h1>
       </Block>
     </>
   )
