@@ -7,6 +7,7 @@ import logo from '../assets/logo.svg'
 import pic from '../assets/profile-pic.jpeg'
 import { div } from "framer-motion/client";
 import { skillsets } from "../constants";
+import Grid from '../assets/grid.png'
 
 // Icons
 import { FaReact } from "react-icons/fa6";
@@ -201,6 +202,7 @@ const Tecnologies = () => {
   return(
     <>
       <Block className='relative col-span-12 md:col-span-3 flex flex-col items-center justify-center overflow-hidden'>
+        <img src={Grid} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-0"/>
         <div className="bg-sec-10 border-2 p-2 rounded-md opacity-85 bg-linear-45 from-[#e34c26] to-[#f1efef] ">
           <FaHtml5 className="text-4xl text-pri-30 opacity-75"/>
         </div>
@@ -212,6 +214,7 @@ const Tecnologies = () => {
        * relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center
        */}
       <Block className='relative col-span-6 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <img src={Grid} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-0"/>
         <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#2965f1b1] to-[#f1efef73]">
           <FaCss3 className="text-4xl text-pri-30 opacity-75"/>
         </div>
@@ -222,6 +225,7 @@ const Tecnologies = () => {
       </Block>
 
       <Block className='relative col-span-6 md:row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <img src={Grid} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-0"/>
         <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#61DBFB] to-[#f1efef]">
           <SiReact className="text-4xl text-pri-30 opacity-75"/>
         </div>
@@ -231,6 +235,7 @@ const Tecnologies = () => {
         </div>
       </Block>
       <Block className='relative col-span-12 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <img src={Grid} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-0"/>
         <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#ff7262] via-[#a159ff88] to-[#0acf83d3]">
           <FaFigma className="text-4xl text-pri-30 opacity-75"/>
         </div>
@@ -239,6 +244,7 @@ const Tecnologies = () => {
         </div>
       </Block>
       <Block className='relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <img src={Grid} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-0"/>
         <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#F1502F] to-[#7b7b7b53]">
           <FaGitAlt className="text-4xl text-pri-30 opacity-75"/>
         </div>
@@ -247,6 +253,7 @@ const Tecnologies = () => {
         </div>
       </Block>
       <Block className='relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <img src={Grid} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-0"/>
         <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#06b5d4af] to-[#23deff4b]">
           <SiTailwindcss className="text-4xl text-pri-30 opacity-75"/>
         </div>
@@ -256,6 +263,7 @@ const Tecnologies = () => {
       </Block>
 
       <Block className='relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <img src={Grid} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-0"/>
         <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#f0da4f85] to-[#12121260]">
           <SiJavascript className="text-4xl text-pri-30 opacity-75"/>
         </div>
