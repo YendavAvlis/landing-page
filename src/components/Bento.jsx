@@ -200,50 +200,68 @@ const Logo = () => {
 const Tecnologies = () => {
   return(
     <>
-      <Block className='col-span-12 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <div className="bg-sec-10  p-2 rounded-md mb-1">
-          <FaHtml5 className="text-2xl text-pri-30"/>
+      <Block className='relative col-span-12 md:col-span-3 flex flex-col items-center justify-center overflow-hidden'>
+        <div className="bg-sec-10 border-2 p-2 rounded-md opacity-85 bg-linear-45 from-[#e34c26] to-[#f1efef] ">
+          <FaHtml5 className="text-4xl text-pri-30 opacity-75"/>
         </div>
-        <h3 className="text-sm font-semibold tracking-wide">HTML</h3>
+        <div className="absolute left-2 bottom-2 px-4 py-1 backdrop-blur-[10px] bg-[#ffffff33] shadow  rounded-sm">
+          <h3 className=" uppercase text-sm font-medium tracking-wide ">HTML</h3>
+        </div>
       </Block>
-      <Block className='col-span-6 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
-        <div className="bg-sec-10  p-2 rounded-md mb-1">
-          <SiTailwindcss className="text-2xl text-pri-30"/>
+      {/**Tailwind
+       * relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center
+       */}
+      <Block className='relative col-span-6 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#2965f1b1] to-[#f1efef73]">
+          <FaCss3 className="text-4xl text-pri-30 opacity-75"/>
         </div>
-        <h3 className="text-sm font-semibold tracking-wide">TailwindCSS</h3>
+        <div className="absolute left-2 bottom-2 px-4 py-1 backdrop-blur-[10px] bg-[#ffffff33] shadow  rounded-sm">
+          <h3 className="uppercase text-sm font-medium tracking-wide">CSS</h3>
+        </div>
+
       </Block>
-      <Block className='col-span-6 md:row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
-        <div className="bg-sec-10  p-2 rounded-md mb-1">
-          <SiReact className="text-2xl text-pri-30"/>
+
+      <Block className='relative col-span-6 md:row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#61DBFB] to-[#f1efef]">
+          <SiReact className="text-4xl text-pri-30 opacity-75"/>
         </div>
-        <h3 className="text-sm font-semibold tracking-wide">React</h3>
+        <div className="absolute left-2 bottom-2 px-4 py-1 backdrop-blur-[10px] bg-[#ffffff33] shadow  rounded-sm">
+
+            <h3 className="uppercase text-sm font-medium tracking-wide">React</h3>
+        </div>
       </Block>
-      <Block className='col-span-12 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
-        <div className="bg-sec-10  p-2 rounded-md mb-1">
-          <FaFigma className="text-2xl text-pri-30"/>
+      <Block className='relative col-span-12 row-span-2 md:col-span-2 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#ff7262] via-[#a159ff88] to-[#0acf83d3]">
+          <FaFigma className="text-4xl text-pri-30 opacity-75"/>
         </div>
-        <h3 className="text-sm font-semibold tracking-wide">Figma</h3>
+        <div className="absolute left-2 bottom-2 px-4 py-1 backdrop-blur-[10px] bg-[#ffffff33] shadow  rounded-sm">
+          <h3 className=" uppercase text-sm font-medium tracking-wide">Figma</h3>
+        </div>
       </Block>
-      <Block className='col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <div className="bg-sec-10  p-2 rounded-md mb-1">
-          <FaGitAlt className="text-2xl text-pri-30"/>
+      <Block className='relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#F1502F] to-[#7b7b7b53]">
+          <FaGitAlt className="text-4xl text-pri-30 opacity-75"/>
         </div>
-        <h3 className="text-sm font-semibold tracking-wide">Git</h3>
+        <div className="absolute left-2 bottom-2 px-4 py-1 backdrop-blur-[10px] bg-[#ffffff33] shadow  rounded-sm">
+          <h3 className="uppercase text-sm font-medium tracking-wide">Git</h3>
+        </div>
       </Block>
-      <Block className='col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <div className="bg-sec-10  p-2 rounded-md mb-1">
-          <FaCss3 className="text-xl text-pri-30"/>
+      <Block className='relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#06b5d4af] to-[#23deff4b]">
+          <SiTailwindcss className="text-4xl text-pri-30 opacity-75"/>
         </div>
-        <h3 className="text-sm font-semibold tracking-wide">CSS</h3>
+        <div className="absolute left-2 bottom-2 px-4 py-1 backdrop-blur-[10px] bg-[#ffffff33] shadow  rounded-sm">
+          <h3 className="uppercase text-sm font-medium tracking-wide">TailwindCSS</h3>
+        </div>
       </Block>
-      {/* <Block className='col-span-6 md:col-span-2 gap-2 flex flex-col items-center justify-center'>
-        <h3 className="text-sm font-semibold tracking-wide">Framer Motion</h3>
-      </Block> */}
-      <Block className='col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center'>
-        <div className="bg-sec-10  p-2 rounded-md mb-1">
-          <SiJavascript className="text-2xl text-pri-30"/>
+
+      <Block className='relative col-span-6 md:col-span-3 gap-2 flex flex-col items-center justify-center overflow-hidden'>
+        <div className="bg-sec-10 border-2 p-2 rounded-md mb-1 opacity-85 bg-linear-45 from-[#f0da4f85] to-[#12121260]">
+          <SiJavascript className="text-4xl text-pri-30 opacity-75"/>
         </div>
-        <h3 className="text-sm font-semibold tracking-wide">Javascript</h3>
+        <div className="absolute left-2 bottom-2 px-4 py-1 backdrop-blur-[10px] bg-[#ffffff33] shadow  rounded-sm">
+          <h3 className="uppercase text-sm font-medium tracking-wide">Javascript</h3>
+        </div>
       </Block>
     </>
   )
