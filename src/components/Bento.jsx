@@ -35,7 +35,7 @@ export const Bento = () => {
         <SocialsBlock />
         <AboutBlock />
         <Block className='col-span-12'>
-          <h1 className="text-4xl font-semibold">Technologies</h1>
+          <h1 className="text-4xl font-semibold">Technologies 💻</h1>
         </Block>
         {/* <SkillsetBlock /> */}
         <Tecnologies />
