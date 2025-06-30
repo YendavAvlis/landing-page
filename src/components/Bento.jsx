@@ -290,7 +290,7 @@ const Footer = () => {
   return (
     <footer className="mt-12">
       <p className="text-center text-neu-10 text-sm font-medium leading-relaxed">
-        &copy; {year.getFullYear()} Vadney Da Silva
+        &copy; {year.getFullYear()} Vadney Da Silva. All Rights Reserved
       </p>
     </footer>
   );
